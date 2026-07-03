@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+
+.navbar{
+    background:#fff;
+    margin:18px;
+    border-radius:20px;
+    padding:14px 25px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+
+.left-logo{
+    color:#009970;
+    font-size:2rem;
+    font-weight:600;
+}
+
+
+.center-logo{
+    color:#000;
+    font-size:2rem;
+    font-weight:600;
+}
+
+
+.nav-link{
+    color:#666;
+    font-weight:500;
+    margin:0 8px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#009970;
+}
+
+.nav-link.active{
+    color:#555;
+}
+
+
+.login-btn{
+    background:#009970;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 28px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:500;
+}
+
+.login-btn:hover{
+    background:#007f5d;
+    color:#fff;
+}
+
+
+.hero{
+    height: 100vh;
+    background: url("hero.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+@media(max-width:991px){
+
+    .navbar-collapse{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .center-logo{
+        display:none;
+    }
+
+    .login-btn{
+        display:inline-block;
+        margin-top:20px;
+    }
+
+    .nav-link{
+        margin:10px 0;
+    }
+
+}
